@@ -7,13 +7,15 @@ $margin: 5px;
 
 .mailing_list {
 	background: url("/users/image.png") no-repeat center top;
-	border: solid 1px #85b1de;
 	width: 600px;
 	height: 540px;
-	background-color: #EDF2F7;
     margin: 0px auto;
     position: relative;
-
+	
+	h1 {
+		text-align:center;
+		font-size:19px;
+	}
 	iframe {
 		margin: 0px auto;
 		display:block;
@@ -23,12 +25,15 @@ $margin: 5px;
         background: url("/users/image.png") no-repeat center top;
 		border: solid 1px #85b1de;
 		width: $width_form;
-		height:130px;
+		height:180px;
 		padding-top:20px;
 		background-color: #EDF2F7;
         margin: 60px auto;
         position: relative;
-
+		h3 {
+			text-align:center;
+			font-size:15px;
+		}
         .left {
 			float:left;
 			padding-left: $margin;
