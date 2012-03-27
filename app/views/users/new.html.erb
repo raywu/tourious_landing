@@ -1,10 +1,20 @@
-<%= form_for @user, :url => { :action => "create" } do |u| %>
-  <p><%= u.label :firstname %></p>
-  <p><%= u.text_field :firstname %></p>
-  <p><%= u.label :lastname %></p>
-  <p><%= u.text_field :lastname %></p>
-  <p><%= u.label :email %></p>
-  <p><%= u.email_field :email %></p>
-  <p><%= u.submit "Yay!" %></p>
-<% end %>
+<div class="mailing_list">
 
+	<iframe class="iframe" width="400" height="233" src="http://www.youtube.com/embed/TzZYYPTk4Ys" frameborder="0" allowfullscreen></iframe>
+
+	<%= form_for @user, :url => { :action => "create" } do |u| %>
+  		<div class="left short_input">
+			<%= u.label :firstname %>
+  			<%= u.text_field :firstname %>
+		</div>
+  		<div class="right short_input">
+			<%= u.label :lastname %>
+  			<%= u.text_field :lastname %>
+		</div>
+  		<div class="left long_input">
+			<%= u.label :email %>
+  			<%= u.email_field :email %>
+	  		<p><%= u.submit "Yay!" %></p>
+		</div>
+	<% end %>
+</div>

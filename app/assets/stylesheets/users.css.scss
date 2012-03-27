@@ -1,3 +1,73 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$width_form: 300px;
+$margin: 5px;
+
+.mailing_list {
+	background: url("/users/image.png") no-repeat center top;
+	border: solid 1px #85b1de;
+	width: 600px;
+	height: 540px;
+	background-color: #EDF2F7;
+    margin: 0px auto;
+    position: relative;
+
+	iframe {
+		margin: 0px auto;
+		display:block;
+	}
+	
+	form {
+        background: url("/users/image.png") no-repeat center top;
+		border: solid 1px #85b1de;
+		width: $width_form;
+		height:130px;
+		padding-top:20px;
+		background-color: #EDF2F7;
+        margin: 60px auto;
+        position: relative;
+
+        .left {
+			float:left;
+			padding-left: $margin;
+			
+        }
+        
+		.right {
+			float:right;
+			padding-right: 2*$margin;
+			}
+		
+		.short_input {
+			width: $width_form / 2 - 4*$margin;
+			input[type="text"]{ 
+				width: $width_form / 2 - 4*$margin; 
+				font-family: Arial, Sans-Serif;
+			    font-size: 13px;
+			    display: block;
+			    border: solid 1px #85b1de;}
+			}
+		.long_input {
+			width: $width_form - 4*$margin;
+			padding: $margin;
+			clear:both;
+			input { 
+				width: $width_form - 3*$margin;
+				font-family: Arial, Sans-Serif;
+			    font-size: 13px;
+			    display: block;
+			    border: solid 1px #85b1de;	
+			}
+			input[type="submit"] {
+				margin: 0px auto;
+				width: $width_form / 2 !important;
+				background-color:#CDD2F7	
+			}
+			input[type="submit"]:hover {
+				background-color:#aec2F7;
+			}
+		} 
+	}    
+}
