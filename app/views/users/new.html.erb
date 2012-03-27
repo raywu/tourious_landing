@@ -1,3 +1,10 @@
+<h1>Welcome to Tourious!</h1>
+
+<!--%= #image_tag("tourious-video-assests-logo.png", :alt => "Welcome to Tourious")%-->
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/TzZYYPTk4Ys" frameborder="0" allowfullscreen></iframe>
+
+<h3>Join us for our launch!</h3>
 <%= form_for @user, :url => { :action => "create" } do |u| %>
   <p><%= u.label :firstname %></p>
   <p><%= u.text_field :firstname %></p>
