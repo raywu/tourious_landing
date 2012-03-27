@@ -1,0 +1,10 @@
+<%= form_for @user, :url => { :action => "create" } do |u| %>
+  <p><%= u.label :firstname %></p>
+  <p><%= u.text_field :firstname %></p>
+  <p><%= u.label :lastname %></p>
+  <p><%= u.text_field :lastname %></p>
+  <p><%= u.label :email %></p>
+  <p><%= u.email_field :email %></p>
+  <p><%= u.submit "Yay!" %></p>
+<% end %>
+

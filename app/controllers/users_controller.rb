@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def new
-
+    @user = User.new
   end
 
   def create
@@ -9,7 +9,7 @@ class UsersController < ApplicationController
     if @user.save
       redirect_to @user
     else
-      render :action => "new"
+      render 'new'
     end
   end
 
