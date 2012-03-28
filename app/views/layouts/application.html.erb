@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TouriousLanding</title>
+  <title>Tourious</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <meta property="og:title" content="Tourious" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://www.tourious.co/" />
+  <meta property="og:image" content="https://twimg0-a.akamaihd.net/profile_images/1879599713/tourious-09_normal.png" />
+  <meta property="og:site_name" content="Tourious" />
+  <meta property="fb:admins" content="1701942" />
 </head>
 <body>
 
 <%= yield %>
 
 </body>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=104196193043597";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 </html>
